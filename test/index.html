@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"> </script>
+    <script>
+        let queryUrl = "https://api.github.com/users/tzvi15"
+    $.ajax({
+    url: queryUrl,
+    method: "GET"
+}).then(function(response){
+    console.log(response);
+}).then(function(){
+ let newUrl = "https://api.github.com/users/tzvik15/starred"
+ $.ajax({
+     url: newUrl,
+     method: "GET"
+ }).then(function(response){
+     console.log(response.length)
+ })
+})
+    
+    
+    </script>
+</body>
+</html>
+
+43aca801991b3139186339c41b77c78022078efa
