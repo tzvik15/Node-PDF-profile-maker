@@ -171,7 +171,8 @@ function generateHTML(data) {
           } 
          }
       </style>
-      
+      <h1>${data.username}<h1>
+      <p>${data.starNum}<p>
       `
         }
 
